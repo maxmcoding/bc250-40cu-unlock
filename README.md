@@ -36,7 +36,13 @@ The patch writes both during `gfx_v10_0_get_cu_info()`, guarded by `device == 0x
 ```bash
 git clone https://github.com/duggasco/bc250-40cu-unlock.git
 cd bc250-40cu-unlock
+
+# debian/ubuntu
 sudo ./scripts/bc250-enable-40cu.sh build
+
+#fedora
+sudo ./scripts/bc250-enable-40cu-fedora.sh build
+
 sudo ./scripts/bc250-enable-40cu.sh enable   # reboots
 ```
 
